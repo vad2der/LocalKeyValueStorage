@@ -23,7 +23,7 @@ let getEntryByKey = (key) => {
 	let entry = {};
 	entry[key] = storage[key];	
 	if(storage.hasOwnProperty(key)){
-		return entry;
+		return JSON.stringify(entry);
 	}else{
 		return "No such key, value pair in the storage";
 	}
@@ -83,5 +83,4 @@ if (arg1){
 	}else{
 		console.log("No action for the argument '"+arg1+"'. Try 'store ?' command");
 	}
-
 }
