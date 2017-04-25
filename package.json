@@ -1,14 +1,14 @@
 {
-  "name": "storeCodingChallenge",
+  "name": "store-coding-challenge",
   "version": "1.0.0",
   "description": "Simple Node developer challange for Tesera Systems Inc.",
   "main": "index.js",
   "bin": {
-    "store": "index.js",
-    "test": "test.js"
+    "store": "index.js"   
   },
   "scripts": {
-    "store": "node index.js"
+    "store": "node index.js",
+    "test": "node test.js"
   },
   "keywords": [
     "cli",
@@ -17,11 +17,10 @@
     "store"
   ],
   "author": "Vadim Deryabin",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "devDependencies": {
     "store": "^1.1.0"
   },
   "dependencies": {
-    "test-cli": "^0.1.0"
   }
 }

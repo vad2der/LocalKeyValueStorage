@@ -4,7 +4,20 @@
 
 let fs = require('fs');
 
-let storageName = "storage.json";
+// getting storage name from store_config.json
+let getStorageName =() =>{
+	if(fs.existsSync('store_config.json')){		
+		try{
+			let output = fs.readFileSync('store_config.json').toString();
+			let jsonOutput = JSON.parse(output);	
+			return jsonOutput["currentStorage"];
+		}catch(e){
+			return 'storage.json';
+		}
+	}else{return 'storage.json';}
+}
+
+let storageName = getStorageName();
 
 let saveToStorage = (object) => {
 	fs.writeFile(storageName, JSON.stringify(object, null, 2), function(error){
