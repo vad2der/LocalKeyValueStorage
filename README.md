@@ -1,8 +1,8 @@
-# challenge-one
+# Local Key-Value Storage
 Simple Node developer challenge.
 
-### Goal
-Clone this repo and build a simple key/value store CLI using only the core Node API. Once you have finished the challenge zip and email your solution to the email provided.
+### Description
+Simple key/value store CLI using only the core Node API.
 
 ### Store API
 
@@ -13,3 +13,6 @@ Clone this repo and build a simple key/value store CLI using only the core Node 
 `$ store get mykey`
 
 `$ store remove mykey`
+
+### Tests
+Black box test included
